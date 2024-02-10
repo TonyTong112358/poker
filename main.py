@@ -8,3 +8,4 @@ label2 = Label(root, text = " world ")
 label2.grid(row = 0 , column = 1 )
 root.mainloop()
 
+print("hello world")

@@ -1,30 +1,14 @@
 from tkinter import * 
 root = Tk()
+# have a place to click
+#  if you want an image search up PhotoImage tkinter/PIL
+# every click increments the amount of cookie by 1
+# have at least 1 upgrade
+# at least 1 upgrade to make the amount generated per click more (this upgrade sshould increase by price every time it is bought) 
+#  The upgrades  should check if they have enough cookies generated
+# (optional) make cookie generate when not clciked,(async)
+# make this application formatted well enough for people to understand what is going on(pack,place)
 
-
-label1 = Label(text = 1, borderwidth=2, relief="groove")
-label2 = Label(text = 3, borderwidth=2, relief="groove")
-
-
-def increment(widget):
-
-    widget["text"] += 1
-
-
-
-
-# pack
-# grid
-# place
-root.geometry("500x500")
-click1 = Button(root, text = "click me to change label1", height = 5, width = 30, command = lambda:increment(label1))
-click2 = Button(root, text = "click me to change label2", height = 5, width = 30, command = lambda:increment(label2))
-
-click1.pack()
-click2.pack()
-label1.pack()
-label2.pack()
-button3.pack()
 root.mainloop()
 
 
